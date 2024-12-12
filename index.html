@@ -1,1 +1,513 @@
+<html>
+ <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>CEE TV WEB</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta name="author" content="MR.NITROX"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css"> 
+  <link rel="stylesheet" type="text/css" href="styles.css"> 
+ </head> 
+ <body> 
+  <div class="header">
+    CEETV WEB 
+  </div> 
+  <div id="jwplayerDiv" data-jwplayer-id="jwplayerDiv"></div> 
+  <div class="container"> 
+   <button class="btn pulse" onclick="switchToDRM1()">TV 5</button> 
+   <button class="btn pulse" onclick="switchToDRM2()">A2Z</button> 
+   <button class="btn pulse" onclick="switchToDRM3()">ONE PH</button> 
+   <button class="btn pulse" onclick="switchToDRM4()">ONE NEWS</button> 
+   <button class="btn pulse" onclick="switchToDRM5()">iBC</button> 
+   <button class="btn pulse" onclick="switchToDRM6()">RPTV</button> 
+   <button class="btn pulse" onclick="switchToDRM7()">PTV</button> 
+   <button class="btn pulse" onclick="switchToDRM8()">MPTV</button> 
+   <button class="btn pulse" onclick="switchToDRM9()">TV MARIA</button> 
+   <button class="btn pulse" onclick="switchToDRM10()">TRUE FM</button> 
+   <button class="btn pulse" onclick="switchToDRM11()">BILYONARYO NEWS</button> 
+   <button class="btn pulse" onclick="switchToDRM12()">TV UP</button> 
+   <button class="btn pulse" onclick="switchToDRM13()">DEPED CH</button> 
+   <button class="btn pulse" onclick="switchToDRM14()">KNOWLEDGE CH</button> 
+   <button class="btn pulse" onclick="switchToOtherStream0()">TFC</button> 
+   <button class="btn pulse" onclick="switchToDRM15()">VIVA</button> 
+   <button class="btn pulse" onclick="switchToDRM16()">PBO</button> 
+   <button class="btn pulse" onclick="switchToOtherStream5()">CINEMAONE</button> 
+   <button class="btn pulse" onclick="switchToOtherStream6()">CINEMO</button> 
+   <button class="btn pulse" onclick="switchToDRM17()">SARI SARI</button> 
+   <button class="btn pulse" onclick="switchToDRM18()">BUKO</button> 
+   <button class="btn pulse" onclick="switchToDRM19()">TMC</button> 
+   <button class="btn pulse" onclick="switchToDRM20()">ROCK ACTION</button> 
+   <button class="btn pulse" onclick="switchToDRM21()">DREAMWORKS TAGALIZED</button> 
+   <button class="btn pulse" onclick="switchToDRM22()">DREAMWORKS HD</button> 
+   <button class="btn pulse" onclick="switchToDRM23()">MOONBUGS</button> 
+   <button class="btn pulse" onclick="switchToDRM24()">NICKELODEON</button> 
+   <button class="btn pulse" onclick="switchToDRM25()">NICK JR</button> 
+   <button class="btn pulse" onclick="switchToDRM26()">CARTOON NETWORK</button> 
+   <button class="btn pulse" onclick="switchToOtherStream1()">CARTOONITO</button> 
+   <button class="btn pulse" onclick="switchToOtherStream2()">DISNEY CH</button> 
+   <button class="btn pulse" onclick="switchToOtherStream3()">DISNEY XD</button> 
+   <button class="btn pulse" onclick="switchToOtherStream4()">PBS KIDS</button> 
+   <button class="btn pulse" onclick="switchToDRM27()">ANIMAX</button> 
+   <button class="btn pulse" onclick="switchToDRM28()">HITS NOW</button> 
+   <button class="btn pulse" onclick="switchToDRM29()">HBO HD</button> 
+   <button class="btn pulse" onclick="switchToDRM30()">HBO FAMILY</button> 
+   <button class="btn pulse" onclick="switchToDRM31()">HBO SIGNATURE</button> 
+   <button class="btn pulse" onclick="switchToDRM32()">HBO HITS</button> 
+   <button class="btn pulse" onclick="switchToDRM33()">HITS HD</button> 
+   <button class="btn pulse" onclick="switchToDRM34()">HITS MOVIES</button> 
+   <button class="btn pulse" onclick="switchToDRM35()">THRILL</button> 
+   <button class="btn pulse" onclick="switchToDRM36()">TAP ACTION FLIX</button> 
+   <button class="btn pulse" onclick="switchToDRM37()">AXN</button> 
+   <button class="btn pulse" onclick="switchToDRM38()">CINEMAX</button> 
+   <button class="btn pulse" onclick="switchToOtherStream7()">SONY MOVIES</button> 
+   <button class="btn pulse" onclick="switchToDRM39()">WARNER</button> 
+   <button class="btn pulse" onclick="switchToOtherStream11()">RAKUTEN VIKI</button> 
+   <button class="btn pulse" onclick="switchToOtherStream12()">RAKUTEN ACTION</button> 
+   <button class="btn pulse" onclick="switchToOtherStream14()">RAKUTEN ACTION EU</button> 
+   <button class="btn pulse" onclick="switchToOtherStream15()">RAKUTEN COMEDY</button> 
+   <button class="btn pulse" onclick="switchToOtherStream16()">RAKUTEN COMEDY EU</button> 
+   <button class="btn pulse" onclick="switchToOtherStream17()">RAKUTEN FAMILY EU</button> 
+   <button class="btn pulse" onclick="switchToDRM40()">KIX</button> 
+   <button class="btn pulse" onclick="switchToOtherStream22()">SBS EU</button> 
+   <button class="btn pulse" onclick="switchToOtherStream9()">K MOVIES</button> 
+   <button class="btn pulse" onclick="switchToOtherStream10()">KBS WORLD</button> 
+   <button class="btn pulse" onclick="switchToDRM42()">TVN MOVIES</button> 
+   <button class="btn pulse" onclick="switchToDRM43()">TVN PREMIUM</button> 
+   <button class="btn pulse" onclick="switchToDRM44()">PARIS OLYMPICS CH</button> 
+   <button class="btn pulse" onclick="switchToDRM45()">SPOTV</button> 
+   <button class="btn pulse" onclick="switchToDRM46()">SPOTV2</button> 
+   <button class="btn pulse" onclick="switchToDRM47()">PREMIER SPORTS2</button> 
+   <button class="btn pulse" onclick="switchToDRM48()">PREMIER SPORTS</button> 
+   <button class="btn pulse" onclick="switchToDRM49()">TAP SPORTS</button> 
+   <button class="btn pulse" onclick="switchToDRM50()">ONE SPORTS+</button> 
+   <button class="btn pulse" onclick="switchToDRM51()">ONE SPORTS</button> 
+   <button class="btn pulse" onclick="switchToDRM52()">PBA RUSH</button> 
+   <button class="btn pulse" onclick="switchToDRM53()">UAAP</button> 
+   <button class="btn pulse" onclick="switchToDRM54()">CGTN</button> 
+   <button class="btn pulse" onclick="switchToDRM55()">FRANCE24</button> 
+   <button class="btn pulse" onclick="switchToDRM56()">ABC AUS</button> 
+   <button class="btn pulse" onclick="switchToDRM57()">TV5 MONDE</button> 
+   <button class="btn pulse" onclick="switchToDRM58()">CHANNEL NEWS ASIA</button> 
+   <button class="btn pulse" onclick="switchToDRM64()">BBCWORLD NEWS</button> 
+   <button class="btn pulse" onclick="switchToDRM59()">LOTUS MACAU</button> 
+   <button class="btn pulse" onclick="switchToDRM60()">ANIMAL PLANET</button> 
+   <button class="btn pulse" onclick="switchToDRM61()">BBCEARTH</button> 
+   <button class="btn pulse" onclick="switchToDRM62()">ROCKENTERTAINMENT</button> 
+   <button class="btn pulse" onclick="switchToDRM63()">DISCOVERY</button> 
+   <button class="btn pulse" onclick="switchToDRM65()">TRAVEL CH</button> 
+   <button class="btn pulse" onclick="switchToDRM74()">FOOD NETWORK</button> 
+   <button class="btn pulse" onclick="switchToDRM66()">ASIANFOODNETWORK</button> 
+   <button class="btn pulse" onclick="switchToDRM67()">TAP TV</button> 
+   <button class="btn pulse" onclick="switchToDRM68()">CRIMEINVESTIGATION</button> 
+   <button class="btn pulse" onclick="switchToDRM69()">TECH STORM</button> 
+   <button class="btn pulse" onclick="switchToDRM70()">FASHION TV</button> 
+   <button class="btn pulse" onclick="switchToDRM71()">BLOOMBERG</button> 
+   <button class="btn pulse" onclick="switchToDRM72()">NHK JAPAN</button> 
+   <button class="btn pulse" onclick="switchToDRM73()">HISTORY</button> 
+   <button class="btn pulse" onclick="switchToDRM75()">ALJAZEERA</button> 
+   <button class="btn pulse" onclick="switchToDRM76()">CCTV4</button> 
+   <button class="btn pulse" onclick="switchToDRM77()">LIFETIME</button> 
+   <button class="btn pulse" onclick="switchToDRM78()">HGTV</button> 
+   <button class="btn pulse" onclick="switchToDRM79()">ARIRANG</button> 
+   <button class="btn pulse" onclick="switchToOtherStream19()">MTV</button> 
+   <button class="btn pulse" onclick="switchToOtherStream20()">MYX</button> 
+   <button class="btn pulse" onclick="switchToOtherStream21()">DZBB</button> 
+   <button class="btn pulse" onclick="switchToOtherStream13()">TEST</button> 
+   <button class="btn pulse" onclick="switchToOtherStream8()">TEST</button> 
+   <button class="btn pulse" onclick="switchToDRM41()">TEST</button> 
+   <button class="btn pulse" onclick="switchToOtherStream18()">TEST</button> 
+   <button class="btn pulse" onclick="switchToOtherStream23()">TEST</button> 
+  </div> 
+  <link rel="stylesheet" href="bak2tap.css"> 
+  <div class="progress-wrap"> 
+   <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102"> 
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path> 
+   </svg> 
+  </div> 
+  <style>
+      html {
+	      
+            hover-color: cyan;
+            background-image: url("https://raw.githubusercontent.com/cee-tv/Chinatv/refs/heads/main/Chill%20Night%20Stars%201-2.gif");
+            font-family: Poppins;
+            background:#00000;
+            margin: 0;
+            padding: 0;
+	    
+        }
 
+        #myElement{
+        position:reletive;
+        width:100%!important;
+        height:100%!important
+
+
+        }
+
+    .jw-state-paused .jw-svg-icon-play path {
+        display: none;
+    }
+
+    .jw-state-paused .jw-svg-icon-play {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/play.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-state-paused .jw-icon-playback:hover .jw-svg-icon-play {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/play-hover.svg");
+    }
+
+    .jw-svg-icon-pause path {
+        display: none;
+    }
+
+    .jw-svg-icon-pause {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/pause.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-icon-playback:hover .jw-svg-icon-pause {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/pause-hover.svg");
+    }
+
+    .jw-svg-icon-buffer path {
+        display: none;
+    }
+
+    .jw-svg-icon-buffer {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/buffer.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-svg-icon-replay path {
+        display: none;
+    }
+
+    .jw-svg-icon-replay {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/replay.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-icon-replay:hover .jw-svg-icon-replay {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/replay-hover.svg");
+    }
+
+    .jw-svg-icon-rewind path {
+        display: none;
+    }
+
+    .jw-svg-icon-rewind {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/rewind.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-icon-rewind:hover .jw-svg-icon-rewind {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/rewind-hover.svg");
+    }
+
+    .jw-svg-icon-next path {
+        display: none;
+    }
+
+    .jw-svg-icon-next {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/next.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-icon-next:hover .jw-svg-icon-next {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/next-hover.svg");
+    }
+
+    .jw-svg-icon-volume-100 path {
+        display: none;
+    }
+
+    .jw-svg-icon-volume-100 {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/volume-on.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-icon-volume:hover .jw-svg-icon-volume-100 {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/volume-on-hover.svg");
+    }
+
+    .jw-svg-icon-volume-0 path {
+        display: none;
+    }
+
+    .jw-svg-icon-volume-0 {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/volume-off.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-icon-volume:hover .jw-svg-icon-volume-0 {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/volume-off-hover.svg");
+    }
+
+    .jw-svg-icon-cc-off path {
+        display: none;
+    }
+
+    .jw-svg-icon-cc-off {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/captions.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-icon-cc-off:hover .jw-svg-icon-cc-off {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/captions-hover.svg");
+    }
+
+    .jw-svg-icon-playlist path {
+        display: none;
+    }
+
+    .jw-svg-icon-playlist {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/playlist.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-playlist-btn:hover .jw-svg-icon-playlist {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/playlist-hover.svg");
+    }
+
+    .jw-svg-icon-settings path {
+        display: none;
+    }
+
+    .jw-svg-icon-settings {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/settings.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-icon-settings:hover .jw-svg-icon-settings {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/settings-hover.svg");
+    }
+
+    .jw-svg-icon-quality-100 path {
+        display: none;
+    }
+
+    .jw-svg-icon-quality-100 {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/quality.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-settings-quality:hover .jw-svg-icon-quality-100 {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/quality-hover.svg");
+    }
+
+    .jw-svg-icon-close path {
+        display: none;
+    }
+
+    .jw-svg-icon-close {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/close.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-settings-close:hover .jw-svg-icon-close {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/close-hover.svg");
+    }
+
+    .jw-svg-icon-fullscreen-on path {
+        display: none;
+    }
+
+    .jw-svg-icon-fullscreen-on {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/fullscreen-on.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-icon-fullscreen:hover .jw-svg-icon-fullscreen-on {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/fullscreen-on-hover.svg");
+    }
+
+    .jw-svg-icon-fullscreen-off path {
+        display: none;
+    }
+
+    .jw-svg-icon-fullscreen-off {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/fullscreen-off.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .jw-icon-fullscreen:hover .jw-svg-icon-fullscreen-off {
+        background-image: url("https://cdn.jsdelivr.net/gh/Hadi0609/JioTvAssets@v1.0/assets/jwp/fullscreen-off-hover.svg");
+    }
+
+    .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+    }
+
+    .loading-text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+    }
+
+
+    .loading-text span {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 50px;
+        font-weight: bold;
+        color: #00b3ff;
+        font-family: 'Quattrocento Sans', sans-serif;
+    }
+
+    .loading-text span:nth-child(1) {
+        filter: blur(0px);
+        animation: blur-text 1.5s 0s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(2) {
+        filter: blur(0px);
+        animation: blur-text 1.5s 0.2s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(3) {
+        filter: blur(0px);
+        animation: blur-text 1.5s 0.4s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(4) {
+        filter: blur(0px);
+        animation: blur-text 1.5s 0.6s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(5) {
+        filter: blur(0px);
+        animation: blur-text 1.5s 0.8s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(6) {
+        filter: blur(0px);
+        animation: blur-text 1.5s 1s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(7) {
+        filter: blur(0px);
+        animation: blur-text 1.5s 1.2s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(8) {
+        filter: blur(0px);
+        animation: blur-text 1.5s 1.4s infinite linear alternate;
+    }
+
+    @keyframes blur-text {
+        0% {
+            filter: blur(0px);
+        }
+
+        100% {
+            filter: blur(4px);
+        }
+    }
+    #videoContainer {
+        position:absolute;
+        width:100%!important;
+        height:100%!important
+    }
+
+.scrollbar-track-y {
+background: #131720 !important;
+top: 10px !important;
+bottom: 10px !important;
+height: auto !important;
+width: 4px !important;
+border-radius: 4px !important;
+right: 10px !important;
+overflow: hidden;
+}
+.scrollbar-thumb-y {
+background: #2f80ed !important;
+width: 4px !important;
+border-radius: 4px !important;
+}
+.scrollbar-track-x {
+background: #131720 !important;
+left: 10px !important;
+right: 10px !important;
+height: 4px !important;
+width: auto !important;
+border-radius: 4px !important;
+bottom: 10px !important;
+overflow: hidden;
+}
+.scrollbar-thumb-x {
+background: #2f80ed !important;
+height: 4px !important;
+border-radius: 4px !important;
+}
+    
+    .custom-button {
+      background-color: #6b7278;
+      color: #fff;
+      padding: 16px;
+      border: none;
+      cursor: pointer;
+      margin: 0.8px;
+      border-radius: 5px;
+    }
+
+    .custom-button:hover {
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5); 
+      background-color: #5b6369;
+    }
+
+    .button-container {
+        margin: 0.8px; /* Adjust the margin as needed */
+        text-align: center; /* Center align the button within the div */
+    }
+    .button-container {
+        text-align: center;        
+        padding: 20px; /* Padding around the buttons */
+        display: grid;
+        grid-template-columns: auto auto;
+}
+    }
+    .header {
+        text-align: center;
+        background-color: #5b6369;
+        color: #fff;
+        padding: 10px;
+        font-size: 24px;
+    } 
+   .header::first-letter {
+       font-size: 26px; /* Increase the font size of the first letter */
+       font-weight: bold; /* Make it bold */
+       color: #ff5733; 
+   }
+ </style> 
+ </body>
+  </html>
